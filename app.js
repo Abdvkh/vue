@@ -7,17 +7,20 @@ const app = Vue.createApp({
                 {
                     title: "The Final Empire",
                     author: "Brandon Sanderson",
-                    img: 'assets/img.png'
+                    img: 'assets/img.png',
+                    isFav: true
                 },
                 {
                     title: "The Way of Kings",
                     author: "Tim Anderson",
-                    img: 'assets/img.png'
+                    img: 'assets/img.png',
+                    isFav: false
                 },
                 {
                     title: "The Name of winds",
                     author: "Jake Mordan",
-                    img: 'assets/img.png'
+                    img: 'assets/img.png',
+                    isFav: true
                 },
             ],
         };
