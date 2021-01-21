@@ -1,22 +1,23 @@
 const app = Vue.createApp({
     data(){
         return {
+            url: "https://vakhid.digital",
             showBooks: true,
             books: [
                 {
                     title: "The Final Empire",
                     author: "Brandon Sanderson",
-                    age: 45
+                    img: 'assets/img.png'
                 },
                 {
                     title: "The Way of Kings",
                     author: "Tim Anderson",
-                    age: 34
+                    img: 'assets/img.png'
                 },
                 {
                     title: "The Name of winds",
                     author: "Jake Mordan",
-                    age: 65
+                    img: 'assets/img.png'
                 },
             ],
         };
