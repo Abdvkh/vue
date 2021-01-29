@@ -3,13 +3,13 @@
   <p>Welcome</p>
   <Modal
       v-if="showModal"
-     :header="header"
-     :text="text"
-     theme="sale"
+      :header="header"
+      :text="text"
+      theme="sale"
       @close="toggleModal"
   />
 
-  <button @click="toggleModal">Show modal</button>
+  <button @click.alt="toggleModal">Show modal(alt)</button>
 </template>
 
 <script>
