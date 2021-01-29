@@ -3,11 +3,17 @@
   <p>Welcome</p>
   <Modal
       v-if="showModal"
-      :header="header"
-      :text="text"
       theme="sale"
       @close="toggleModal"
-  />
+  >
+    <template v-slot:links>
+      <a href="#">Sign Up Now</a>
+      <br>
+      <a href="#">More info</a>
+    </template>
+    <h1>Ninja Giveaway!</h1>
+    <p>Grab your ninja swag for half price!</p>
+  </Modal>
 
   <button @click.alt="toggleModal">Show modal(alt)</button>
 </template>
@@ -28,8 +34,6 @@ export default {
   data(){
     return {
       title: "My First Vue App:)",
-      header: "Sign up for the giveaway!",
-      text: "Grab your ninja swag for half price!",
       showModal: false
     };
   },
